@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+</head>
+<body >
+
+  <!-- BODY DIV -->
+  <div class=" bg-[#121417] flex flex-col items-center justify-center h-screen">
+
+    <!-- MAIN CONTAINER DIV -->
+    <div class="mainCont bg-gradient-to-b from-[#232a34] to-[#171c27] container-sm p-6 md:pr-5 rounded-2xl flex flex-col">
+      
+      <!-- STAR ICON -->
+      <div class="bg-[#252d37] shadow-md p-3 w-10 rounded-full mt-1"> 
+        <img src="images/icon-star.svg" alt="star-icon" class="">
+      </div> 
+      
+      <!-- HEADING -->
+      <h1 class="text-white text-2xl font-semibold text-left mt-5">
+        How did we do?
+      </h1>
+      
+      <!-- MESSAGE -->
+      <p class="text-sm font-normal text-[#7c8798] w-[17rem] mt-3 md:w-80 ">
+        Please let us know how we did with your support request. All feedback is appreciated 
+        to help us improve our offering!
+      </p>
+      
+      <!-- SCORES BUTTON -->
+      <div class="flex justify-between mt-7 space-x-4 text-[#7c8798] [&>*]:rounded-full [&>*]:w-10 [&>*]:bg-[#252d37] 
+      hover:[&>*]:text-white 
+      hover:[&>*]:bg-[#fb7413]
+      focus:[&>*]:bg-[#959eac]
+      focus:[&>*]:text-white
+      transition duration-300">
+
+        <button id="b1" class="score p-2">1</button>
+        <button id="b2" class="score">2</button>
+        <button id="b3" class="score">3</button>
+        <button id="b4" class="score">4</button>
+        <button id="b5" class="score">5</button>
+
+      </div>
+
+      <!-- SUBMIT BUTTON -->
+      <button id="submitBtn" class="rounded-full text-white bg-[#fb7413] transition duration-300 mt-7 p-3 font-semibold text-sm tracking-widest hover:bg-white hover:text-[#fb7413]">
+        SUBMIT
+      </button>
+      
+    </div>
+
+    <!-- THANKYOU CONTAINER -->
+      <div class="thankYouCont bg-gradient-to-b from-[#232a34] to-[#171c27] container-sm p-6 pb-10 md:pr-5 rounded-2xl flex flex-col items-center hidden">
+
+        <!-- IMAGE -->
+        <div class="mt-2">
+          <img src="images/illustration-thank-you.svg" alt="">
+        </div>
+        
+        <!-- RATING MESSAGE -->
+        <div class="text-sm bg-[#252d37] text-[#fb7413] rounded-3xl mt-5 p-2 flex justify-center">
+          <p>You selected 
+          <span id="rating"></span>
+           out of 5</p>
+
+        </div>
+
+        <!-- HEADING -->
+        <h1 class="text-white text-2xl font-semibold text-center mt-5">Thank you!</h1>
+
+        <!-- THANKYOU MESSAGE  -->
+        <p class="text-sm font-normal text-[#7c8798] w-[17rem] mt-3 md:w-80 text-center">We appreciate you taking the time to give a rating. If you ever need more support, 
+          don’t hesitate to get in touch!</p>
+
+
+
+      </div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+  
